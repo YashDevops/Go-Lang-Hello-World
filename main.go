@@ -29,14 +29,13 @@ var LOGGER = logrus.Logger{}
 
 // function for root uri
 func root(response http.ResponseWriter, request *http.Request) {
-	logrus.Infof("Successfully initialized Server At port " + address)
 	fmt.Fprint(response, "Homepage")
 }
 
 // function to print hello
 func hello(response http.ResponseWriter, request *http.Request) {
-	logrus.Infof("Successfully initialized Server At port " + address)
 	fmt.Fprint(response, "Hello World")
+
 }
 
 // function to send sum
